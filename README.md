@@ -78,3 +78,17 @@ Center: It is the numerical mean of the attributes
 Height and width: Related with the variance of each attribute. The user must specify the desired amount of standard deviations used to plot the ellipse.
 Angle: Related with the covariance among attributes.
 The parameter n_std stands for the number of standard deviations bounded by the ellipse. In this case there is 2 and 3 standard deviations (95% and 99.7%)
+
+# Identifying_hate_tweets(Unbalanced_Data)
+
+The data was downloaded from the Kaggle competition web page: https://www.kaggle.com/imene0swaaaan/twitter-sentiment-analysis containinf hate and racist tweets to be identified.
+
+Every tweet is pre-processed using 'prepro_tweet' function, so that it is being tokenized, stop words, handles and URL eliminated; stemmed and lower cased. Later on they are 
+stored in the lists of pre-processed tokens.
+
+Naive Bias and Logistic Regression models were applied to classify tweets as hate and normal ones. 
+
+As the data set is extremely imbalanced with only 7% of hate tweets, the oversampling method was performed and the minority class was  increased up to 33%.
+
+Finally both models were applied on the original/imbalanced data set and modified data. Using F1 scores and data visualization some conclusions on how the imbalanced data can affect the performance of the model were made.
+
