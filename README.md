@@ -92,3 +92,6 @@ As the data set is extremely imbalanced with only 7% of hate tweets, the oversam
 
 Finally both models were applied on the original/imbalanced data set and modified data. Using F1 scores and data visualization some conclusions on how the imbalanced data can affect the performance of the model were made.
 
+# Comments cosine similarity TF-IDF from scratch.
+
+Comments people left at the restaurant in corpus data set are vectorized using TF-IDF technique. Using cosine similarity for the given comment n number most similar comments are found using vector cosine similarity technique.
